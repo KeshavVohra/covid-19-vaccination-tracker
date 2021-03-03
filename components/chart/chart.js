@@ -72,7 +72,8 @@ class Chart extends React.Component {
                 tooltip: {
                     theme: "dark",
                     enabledOnSeries: [0,1],
-                    followCursor: true
+                    followCursor: true,
+                    shared: true
                 },
                 grid: {
                     show: false
