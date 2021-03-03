@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.chartCard {
+    width: 100%;
+    color: $content-color;
+    display: block;
+    margin-bottom: $grid-gutter-width;
+    border-radius: $widget-border-radius;
+    background: $widget-bg-color;
+    box-shadow: $widget-shadow;
+    > header {
+        transition: padding 0.3s linear;
+        padding: $widget-padding-vertical $widget-padding-horizontal 0;
+        color: $text-color;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            color: $text-color;
+        }
+    }
+    svg text {
+        font: $font-weight-base $font-size-sm $font-family-base;
+        fill: $text-color;
+    }
+
+    svg .title {
+        font: $font-weight-bold $font-size-base $font-family-base;
+    }
+}
+
+.chartCardBody {
+    padding: $widget-padding-vertical $widget-padding-horizontal;
+}
+
+.chartCardTitle {
+    margin-top: 0;
+    color: $widget-title-color;
+    padding: 15px 20px 0;
+}

@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.map {
+  position: relative;
+  height: 100%;
+  svg {
+    height: 100%;
+  }
+}
+.stats {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 5% 10%;
+}
+
+.mapChart {
+  height: 100%;
+  padding-bottom: 40px;
+}

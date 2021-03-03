@@ -1,0 +1,67 @@
+@import "../../styles/variables";
+
+.statsCard {
+    color: $content-color;
+    display: block;
+    position: relative;
+    margin-bottom: $grid-gutter-width;
+    border-radius: $widget-border-radius;
+    background: $widget-bg-color;
+    box-shadow: $widget-shadow;
+    > header {
+        transition: padding 0.3s linear;
+        padding: $widget-padding-vertical $widget-padding-horizontal 0;
+        color: $text-color;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            color: $text-color;
+        }
+    }
+}
+
+.statsCardTitle {
+    margin-top: 0;
+    color: $widget-title-color;
+    padding: 15px 20px 0;
+}
+
+.statsCardBody {
+    padding: $widget-padding-vertical $widget-padding-horizontal;
+}
+
+.statsRow {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.statItem {
+    display: inline-block;
+    padding-right: 1.25rem;
+
+    & + .statItem {
+        padding-left: 1.25rem;
+        border-left: 1px solid rgba(206, 206, 206, 0.1);
+    }
+
+    .name {
+        margin-bottom: 0.25rem;
+        font-size: $font-size-sm;
+    }
+    .value {
+        font-size: $font-size-lg;
+    }
+}
+
+.progressRow {
+    .name {
+        margin-bottom: 0.25rem;
+        font-size: $font-size-sm;
+        padding-bottom: 10px;
+    }
+}

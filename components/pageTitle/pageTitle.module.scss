@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.pageTitle {
+    color: $text-color;
+    font-weight: 300;
+    line-height: 1;
+    /* stylelint-disable-next-line */
+    margin: 40px 0 (1.5 * $spacer);
+    small {
+        color: rgba($white, 0.7);
+        padding-left: 10px;
+      }
+}
